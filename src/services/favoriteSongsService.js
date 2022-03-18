@@ -21,17 +21,20 @@ class FavoriteSongsService {
             AND: [
                {
                   song_name: {
-                     contains: songName
+                     contains: songName,
+                     mode: 'insensitive'
                   }
                },
                {
                   artist: {
-                     contains: artist
+                     contains: artist,
+                     mode: 'insensitive'
                   }
                },
                {
                   album: {
-                     contains: album
+                     contains: album,
+                     mode: 'insensitive'
                   }
                }
             ]
